@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body background = "assets/images/Background.jpg">
+        <div class="header">
+                <h1>Crystal Collector</h1>
+            </div>
+            <div class="instructions">
+                <h2>Instructions:</h2>
+                </br>
+                <ol>
+                    <li>You will be given a random number to the start of the game.<span>"Target Number"</span></li>
+                    <li>There are four crystals below.</li>
+                    <ul>
+                        <li id="blue">Topaz</li>
+                        <li id="green">Emerald</li>
+                        <li id="red">Ruby</li>
+                        <li id="gray">Diamond</li>
+                    </ul>
+                    <li>Each crystal is assigned a specific amount of points.</li>
+                    <li>Click a crystal to add x amount of points to your total score</li>
+                    <li>You win points by matching your total score to the random number.</li>
+                    <li>If your score goes above the random number, you lose.</li>
+                    <li>You won't know the value of each crystal until you click on it.</li>
+                </ol>
+            </div>
+            <div class="numberToMatch">
+                    <h2>Target Score:
+                        <div id= "randomNumber"></div>
+                    </h2>
+                </div>
+                <div class="winsAndLosses">
+                    <h2>Wins:
+                        <div id= "Wins"></div>
+                        </br>
+                        Losses: 
+                        <div id= "losses"></div>
+                    </h2>
+                </div>
+                <div class = gems>
+                    <img src="assets/images/topaz.jpg" class=crystal id="topaz">
+                    <img src="assets/images/ruby.jpeg" class=crystal id="ruby">
+                    <img src="assets/images/emerald.jpg" class=crystal id= "emerald">
+                    <img src="assets/images/white.jpg" class=crystal id= "diamond">
+                </div>
+                <div class="userScore">
+                    <h2>Score:
+                        <div id="finalScore"></div>
+                    </h2>
+                </div>
+                <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+                <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+            </body>
+ 
+<H2 id="result"></H2>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
